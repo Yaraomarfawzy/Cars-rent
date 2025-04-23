@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+     <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+     <!-- Customized Bootstrap Stylesheet -->
+     <link href="/css/bootstrap.min.css" rel="stylesheet">
+ 
+     <!-- Template Stylesheet -->
+     <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #2d2f4a;">
+  <div class="container">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand text-warning fw-bold" href="/page/index.html">ROYAL CARS</a>
+    
+    <!-- Toggler Button for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Home Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/index.html">HOME</a></li>
+        <!-- About Link -->
+        <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+          <!-- product Link -->
+         <li class="nav-item"><a class="nav-link" href="/page/CarSearch.html">Product</a></li>
+        <!-- Login Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/Login.html">Login</a></li>
+        <!-- SignUp Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/Signup.html">SignUp</a></li>
+        <!-- Contact Link -->
+        <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5">
+  <!-- SignUp Heading -->
+  <h1 class="text-center" style="color:#F77D0A ;">SignUp</h1>
+  
+  <!-- SignUp Form -->
+  <form action="/signup" method="POST" class="w-50 mx-auto">
+      
+      <!-- Email Input Field -->
+      <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      
+      <!-- Password Input Field -->
+      <div class="mb-3">
+          <label for="password" class="form-label fw-bold">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      
+      <!-- SignUp Button -->
+      <button type="submit" class="w-100 btn-primary text-white rounded-2 px-4 py-2" style="background-color:#F77D0A; border: #F77D0A 1px;">SignUp</button>
+      
+      <!-- Social Media Icons Section -->
+      <div class="text-center mt-3">
+          <!-- Facebook Icon -->
+          <i class="fab fa-facebook-square fa-3x rounded" style=" margin: 10px;"></i>
+          <!-- Email Icon -->
+          <i class="fas fa-envelope fa-3x" style=" margin: 10px;"></i>
+      </div>
+  </form>
+
+  <!-- Redirect Link to Login Page -->
+  <div class="text-center mt-3">
+      <p>Don't have an account? <a href="/page/Login.html" class="text-warning">SignUp</a></p>
+  </div>
+</div>
+<script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CarSearch</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Bootstrap CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom Styles -->
+  <link href="/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #2d2f4a;">
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold" href="/">ROYAL CARS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/page/index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="/page/CarSearch.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="/page/Login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="/page/Signup.html">SignUp</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Section -->
+  <!-- Search Section -->
+<div class="d-flex justify-content-center mt-5">
+  <div class="search container p-4 rounded">
+    <div class="row g-3">
+      <h2 class="text-center">Find Your Car</h2>
+      
+      <!-- Car Name Input -->
+      <div class="col-md-3 col-6">
+        <input type="text" class="form-control border-3 text-start" placeholder="Car Name">
+      </div>
+
+      <!-- Model Input -->
+      <div class="col-md-3 col-6">
+        <input type="text" class="form-control text-start" placeholder="Model">
+      </div>
+
+      <!-- Year Input -->
+      <div class="col-md-3 col-6">
+        <input type="number" class="form-control text-start" placeholder="Year">
+      </div>
+
+      <!-- Color Input -->
+      <div class="col-md-3 col-6">
+        <input type="text" class="form-control text-start" placeholder="Color">
+      </div>
+
+      <!-- Buy or Rent Dropdown -->
+      <div class="d-flex justify-content-center mt-4">
+        <select class="form-select text-start" style="max-width: 300px; border: 3px solid #f77d0a !important;">
+          <option selected disabled>Choose Type</option>
+          <option value="buy">Buy</option>
+          <option value="rent">Rent</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Range Slider -->
+    <div class="mt-4" style="margin: 30px auto; max-width: 300px;">
+      <label for="range" class="text-center fw-bold fa-2x d-block mb-2">Select Value</label>
+      <div style="display: flex; align-items: center;">
+        <span>70</span>
+        <input type="range" min="70" max="82" value="70" class="form-range mx-3" id="range">
+        <span>82</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="items container mt-5">
+    <div class="row g-4">
+
+      <!-- Toyota Corolla -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100 text-center custom-card">
+          <img src="/img/car-rent-1.png" class="card-img-top" alt="Toyota Corolla">
+          <div class="card-body">
+            <h5 class="card-title">Toyota Corolla</h5>
+            <p class="card-text">$50.00</p>
+            <a href="/page/DetailsCar.html" class="btn btn-outline-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hyundai Elantra -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100 text-center custom-card">
+          <img src="/img/car-rent-2.png" class="card-img-top" alt="Hyundai Elantra">
+          <div class="card-body">
+            <h5 class="card-title">Hyundai Elantra</h5>
+            <p class="card-text">$60.00</p>
+            <a href="/page/DetailsCar.html" class="btn btn-outline-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kia Sportage -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100 text-center custom-card">
+          <img src="/img/car-rent-3.png" class="card-img-top" alt="Kia Sportage">
+          <div class="card-body">
+            <h5 class="card-title">Kia Sportage</h5>
+            <p class="card-text">$70.00</p>
+            <a href="/page/DetailsCar.html" class="btn btn-outline-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chevrolet Optra -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100 text-center custom-card">
+          <img src="/img/car-rent-4.png" class="card-img-top" alt="Chevrolet Optra">
+          <div class="card-body">
+            <h5 class="card-title">Chevrolet Optra</h5>
+            <p class="card-text">$80.00</p>
+            <a href="/page/DetailsCar.html" class="btn btn-outline-primary">Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
