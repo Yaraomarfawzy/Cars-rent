@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #2d2f4a;">
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold" href="/">ROYAL CARS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/page/index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="/page/CarSearch.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="/page/Login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="/page/Signup.html">SignUp</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container my-5 ">
+    <div class="row form-card">
+      <!-- الصورة -->
+      <div class="col-12 col-md-6 p-0 order-md-2">
+        <img src="/img/pexels-thuanymarcante-1805053.jpg" alt="Car" class="img-fluid form-image">
+      </div>
+  
+      <!-- النموذج -->
+      <div class="col-12 col-md-6 form-section order-md-1">
+        <h2 class="text-center mb-4">Create Car</h2>
+        <form enctype="multipart/form-data">
+          <div class="mb-3">
+            <label class="form-label">Car Name</label>
+            <input type="text" class="form-control" placeholder="Enter car name">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" rows="3" placeholder="Enter description"></textarea>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input type="number" class="form-control" placeholder="Price in $">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Quantity</label>
+            <input type="number" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Make</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Model</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Engine</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Power</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Top Speed</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Acceleration</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Weight</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Wheels</label>
+            <input type="text" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <select class="form-select">
+              <option selected>-- Select Category --</option>
+              <option value="1">SUV</option>
+              <option value="2">Sedan</option>
+              <option value="3">Sport</option>
+            </select>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Safety Features</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="1">
+              <label class="form-check-label">ABS</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="2">
+              <label class="form-check-label">Airbags</label>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Comfort Features</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="1">
+              <label class="form-check-label">Air Conditioning</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="2">
+              <label class="form-check-label">Leather Seats</label>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Main Image</label>
+            <input type="file" class="form-control">
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">Additional Images</label>
+            <input type="file" class="form-control" multiple>
+          </div>
+  
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary px-5">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
