@@ -700,6 +700,9 @@ td button{
   background-color: #F77D0A;
   margin: 10px auto;
 }
+form{
+  direction:ltr;
+}
 .form-card {
   background-color: white;
   border-radius: 15px;
@@ -838,3 +841,288 @@ label {
     font-size: 0.8rem;
   }
 }
+
+.company {
+  background: #f7f5f5 !important;
+  padding: 50px 0;
+}
+.line-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  position: relative; /* مهم لتحديد موضع الـ ::before بالنسبة له */
+  display: flex; /* لتوسيط الأيقونة بسهولة */
+  align-items: center; /* لتوسيط الأيقونة رأسياً */
+  justify-content: center; /* لتوسيط الأيقونة أفقياً */
+}
+
+.line-icon::before { /* هذا هو العنصر الذي سيحمل الخلفية والماسك والدوران */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: orange; /* اللون اللي هيظهر جوه الماسك */
+  -webkit-mask-image: url('../img/feature_card_circle_orange.svg');
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url('../img/feature_card_circle_orange.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  animation: spin 10s linear infinite;
+  z-index: 0; /* ليكون خلف الأيقونة */
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.line-icon i {
+  /* لون الأيقونة أبيض كما طلبت، أو اتركه أحمر إذا أردت */
+  color: #2B2E4A !important; /* تم التغيير إلى أبيض بناءً على تعليقك "لون الأيقونة أبيض" */
+  /* إذا كنت تريده أحمر كما في الكود الأصلي: color: #f01414 !important; */
+  font-size: 40px;
+  /* line-height و text-align لم تعد ضرورية هنا بسبب flexbox على الـ parent */
+  /* display: block; لم يعد ضرورياً */
+  z-index: 1; /* لضمان أن الأيقونة فوق الـ ::before */
+  position: relative; /* لضمان أن z-index يعمل بشكل صحيح */
+}
+.company .card {
+  background: white !important;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: #f77d0a 2px solid;
+}
+.company .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.company .card h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f77d0a !important;
+}
+.company h2{
+  margin-bottom: 30px !important;
+}
+.company  span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f77d0a !important;
+}
+.company .col {
+  /* border: #2B2E4A 2px solid; */
+  margin: 20px  0 !important ;
+}
+ .Maintenance .container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Maintenance .card {
+  position: relative;
+  width: 300px;
+  height: 500px;
+
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Maintenance .card:hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(0.5);
+}
+
+.Maintenance .card-content {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 20px;
+  margin: 60% 15px 15px;
+  border-radius: 12px;
+  text-align: center;
+  opacity: 0;
+}
+.Maintenance .card:hover .card-content{
+  opacity: 1;
+}
+
+.Maintenance .icon {
+  font-size: 40px;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.Maintenance .card h6 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.Maintenance .card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.Maintenance .card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f4b400;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Maintenance .card  img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+   top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(0.8);
+}
+
+  .hero {
+      position: relative;
+      height: 100vh;
+      background-image: url('/img/hero_bg_10_2.jpg'); /* استبدليها بصورة الخلفية */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 5%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .hero-content h5 {
+      font-weight: 400;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .hero-content h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero-content h1 span {
+      background: white;
+      color: #f77d0a;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .btn-primary {
+      background-color: #2B2E4A;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-circle {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .btn-circle + span {
+      color: white;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 32px;
+      }
+    }
+
+.buttons a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0ecec;
+    color: #2B2E4A;
+    border: #f77d0a solid 2px;
+    border-radius: 25px;
+    font-size: 25px ;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .buttons a:hover {
+    background: transparent;
+    border: 2px solid #F77D0A;
+    color: #FFFFFF;
+    
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

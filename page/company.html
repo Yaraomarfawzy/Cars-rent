@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class=" text-center">
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #2d2f4a;">
+  <div class="container">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand text-warning fw-bold" href="/page/index.html">ROYAL CARS</a>
+    
+    <!-- Toggler Button for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Home Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/index.html">HOME</a></li>
+        <!-- About Link -->
+        <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+        <!-- product Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/CarSearch.html">Product</a></li>
+        <!-- Login Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/Login.html">Login</a></li>
+        <!-- SignUp Link -->
+        <li class="nav-item"><a class="nav-link" href="/page/Signup.html">SignUp</a></li>
+        <!-- Contact Link -->
+        <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <section>
+<div class="background">
+  <div class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+   <h5>Get the Best Services from</h5>
+     <h1>You Can <span>Count On Us</span><br>for Insurance & Maintenance</h1>
+      <div class="buttons" >
+        <a href="https://wa.me/966500563630?text=مرحبا%20اريد%20استفسار%20حول%20تسجيل" target="_blank" class="register-btn"> consultation</a>
+        <!-- <div style="display: flex; align-items: center;">
+          <button class="btn-circle">▶</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+<section class="company">
+    <!-- <h2 class="mb-4">عرض البيانات باستخدام Bootstrap فقط</h2> -->
+
+  <!-- الأزرار كـ Tabs -->
+  <ul class="nav nav-tabs justify-content-center mb-3" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active fw-bold" id="data1-tab" data-bs-toggle="tab" data-bs-target="#data1" type="button" role="tab" aria-controls="data1" aria-selected="true">
+      Maintenance
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link fw-bold" id="data2-tab" data-bs-toggle="tab" data-bs-target="#data2" type="button" role="tab" aria-controls="data2" aria-selected="false">
+     Insurance Companies 
+      </button>
+    </li>
+  </ul>
+
+  <!-- المحتوى -->
+  <div class="tab-content border rounded p-4 " id="myTabContent">
+    <div class="tab-pane fade show active" id="data1" role="tabpanel" aria-labelledby="data1-tab">
+<div class="container mt-5">
+  <h2 class="mb-5 text-center">Car Service Centers <span>in Cairo</span></h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="cardsContainer">
+
+    <!-- Card 1 -->
+    <div class="col service-card">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon"><i class="fa-solid fa-id-card custom-icon"></i></div>
+          <h5 class="card-title">Champollion Car Service Center</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> 22 Mahmoud Bassiouny Street, Kasr El Nile.<br>
+            <strong>Services:</strong> Comprehensive maintenance for all car types.<br>
+            <strong>Phone Number:</strong> 0225788055
+          </p>
+          <p class="text-muted small">Source: Qalek Fein</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col service-card">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon"><i class="fa-solid fa-users custom-icon"></i></div>
+          <h5 class="card-title">Kandil Car Service Center</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> 15 Tahrir Street, Downtown Cairo.<br>
+            <strong>Services:</strong> Maintenance and diagnostics.<br>
+            <strong>Phone Number:</strong> 01001234567
+          </p>
+          <p class="text-muted small">Source: Qalek Fein</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col service-card">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon"><i class="fa-solid fa-screwdriver custom-icon"></i></div>
+          <h5 class="card-title">El-Saba Auto Service</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> Zahraa El Maadi, next to Wadi Degla Club.<br>
+            <strong>Services:</strong> Comprehensive maintenance for all car types.<br>
+            <strong>Phone Number:</strong> 16449
+          </p>
+          <p class="text-muted small">Source: Egypt Finder</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col service-card">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon"><i class="fa-solid fa-car-side custom-icon"></i></div>
+          <h5 class="card-title">Power World (Alam El Power)</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> 58 Khalifa Al-Zaher Street, Nasr City.<br>
+            <strong>Services:</strong> Specialized in electrical and power systems maintenance.<br>
+            <strong>Phone Number:</strong> 01004127747
+          </p>
+          <p class="text-muted small">Source: Egypt Finder</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col service-card">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon"><i class="fa-solid fa-car custom-icon"></i></div>
+          <h5 class="card-title">Ghabbour Auto</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> Cairo-Ismailia Desert Road, Km 22.<br>
+            <strong>Services:</strong> Authorized maintenance for Hyundai, Chery, and more.<br>
+            <strong>Phone Number:</strong> 16661
+          </p>
+          <p class="text-muted small">Sources: Egypt Finder, Tawfiqia</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Buttons -->
+  <div class="d-flex justify-content-center mt-4 mb-5">
+    <button id="prevBtn" class="btn btn-danger ms-2">Back</button>
+    <button id="nextBtn" class="btn btn-success">Next</button>
+  </div>
+</div>
+
+ 
+<div class="container">
+  <h2 class="mb-5 text-center">Car Service Centers <span>in Minya</span></h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Shell Authorized Center – Car Tech -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon">
+            <i class="fa-solid fa-gas-pump custom-icon"></i>
+          </div>
+          <h5 class="card-title">Shell Authorized Center – Car Tech</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> Madraset El Zeraa Street, Downtown Minya.<br>
+            <strong>Services:</strong> Authorized maintenance for multiple car brands.<br>
+            <strong>Phone Number:</strong> Not specified
+          </p>
+          <p class="text-muted small">Source: Yellow Pages Egypt</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Al-Rowad Center -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon">
+            <i class="fa-solid fa-gears custom-icon"></i>
+          </div>
+          <h5 class="card-title">Al-Rowad Center</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> Eastern Matahra Industrial Zone, in front of Minya Gas Factory.<br>
+            <strong>Services:</strong> Authorized service center for various brands.<br>
+            <strong>Phone Number:</strong> Not specified
+          </p>
+          <p class="text-muted small">Source: Hatla2ee</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega Auto Center -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <div class="line-icon">
+            <i class="fa-solid fa-screwdriver-wrench custom-icon"></i>
+          </div>
+          <h5 class="card-title">Mega Auto Center</h5>
+          <p class="card-text mt-3">
+            <strong>Address:</strong> New Minya, Crafts and Seventh District, in front of the Recruitment Zone.<br>
+            <strong>Services:</strong> General car maintenance and repair services.<br>
+            <strong>Phone Number:</strong> Not specified
+          </p>
+          <p class="text-muted small">Source: Local Directory</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-5">
+    <h5>More options</h5>
+    <p>
+      You can visit
+      <a href="https://tawfiqia.com" target="_blank">Tawfiqia</a> and
+      <a href="https://hatla2ee.com" target="_blank">Hatla2ee</a>
+      for a full list of car service centers in Minya.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+    <div class="tab-pane fade" id="data2" role="tabpanel" aria-labelledby="data2-tab">
+    <div class="Maintenance">
+  <div class="container">
+
+    <!-- Insurance Company -->
+    <!-- <div class="card">
+      <img src="/img/pexels-adrian-dorobantu-989175-2127733.jpg" alt="Misr Insurance Company">
+      <div class="card-content">
+        <div class="icon">🏢</div>
+        <h6>Misr Insurance Company</h6>
+        <p>Multiple branches in Minya, including one located on El-Galaa Street, Mallawi, Minya.</p>
+        <a href="#">READ MORE →</a>
+      </div>
+    </div> -->
+
+    <!-- Banque Misr -->
+    <div class="card">
+      <img src="/img/pexels-adrian-dorobantu-989175-2127733.jpg" alt="Banque Misr">
+      <div class="card-content">
+        <div class="icon">🏦</div>
+        <h6>Misr Insurance Company</h6>
+        <p>Multiple branches in Minya, including one located on El-Galaa Street, Mallawi, Minya.</p>
+        <a href="#">READ MORE →</a>
+      </div>
+    </div>
+
+    <!-- National Bank of Egypt -->
+    <div class="card">
+      <img src="/img/pexels-aleksmagnusson-3441201.jpg" alt="National Bank of Egypt">
+      <div class="card-content">
+        <div class="icon">🏦</div>
+        <h6>Misr Life Insurance</h6>
+        <p>Address: 29 Port Said Street, Sheikh Tower, Samalut, Minya.</p>
+        <a href="#">READ MORE →</a>
+      </div>
+    </div>
+
+    <!-- Minya University Hospital -->
+    <div class="card">
+      <img src="/img/pexels-alex-amorales-321095-909907.jpg" alt="Minya University Hospital">
+      <div class="card-content">
+        <div class="icon">🏥</div>
+        <h6>GIG Egyptian Arab Insurance Group</h6>
+        <p>Address: 29 Port Said Street, Sheikh Tower, Samalut, Minya.</p>
+        <a href="#">READ MORE →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</section>
+
+  <!-- Footer Section -->
+    <footer class="text-light py-5" style="background-color: #2B2E4A;">
+        <div class="container">
+            <div class="row">
+                <!-- Get in Touch -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h3 class="mb-4">GET IN TOUCH</h3>
+                    <div>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> 123 Street, New York, USA</p>
+                        <p><i class="fas fa-phone-alt mr-2"></i> +012 345 67890</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@example.com</p>
+                    </div>
+                    <h4 class="mt-4">FOLLOW US</h4>
+                    <div>
+                        <a href="#" class="text-light mr-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mr-3"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="text-light mr-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Useful Links -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h3 class="mb-4">USEFUL LINKS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Private Policy</a></li>
+                        <li><a href="#" class="text-light">Term & Conditions</a></li>
+                        <li><a href="#" class="text-light">New Member Registration</a></li>
+                        <li><a href="#" class="text-light">Affiliate Programme</a></li>
+                        <li><a href="#" class="text-light">Return & Refund</a></li>
+                        <li><a href="#" class="text-light">Help & FAQs</a></li>
+                    </ul>
+                </div>
+                <!-- Car Gallery -->
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
+                    <h3 class="mb-4">CAR GALLERY</h3>
+                    <div class="row">
+                        <div class="col-4 mb-2">
+                            <div class="bg-secondary rounded overflow-hidden">
+                                <img src="/img/gallery-1.jpg" alt="Car 1" class="w-100 h-100 object-cover">
+                            </div>
+                        </div>
+                        <div class="col-4 mb-2">
+                            <div class="bg-secondary rounded overflow-hidden">
+                                <img src="/img/gallery-2.jpg" alt="Car 2" class="w-100 h-100 object-cover">
+                            </div>
+                        </div>
+                        <div class="col-4 mb-2">
+                            <div class="bg-secondary rounded overflow-hidden">
+                                <img src="/img/gallery-3.jpg" alt="Car 3" class="w-100 h-100 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-12 col-md-3">
+                    <h3 class="mb-4">NEWSLETTER</h3>
+                    <p class="text-light mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum.</p>
+                    <div class="d-flex">
+                        <input type="email" placeholder="Your Email" class="form-control text-light border border-dark rounded-0">
+                        <button class="btn btn-warning ml-2">SIGN UP</button>
+                    </div>
+                    <p class="mt-4 text-light text-sm">Lorem sit sed elitr sed kasd et</p>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center mt-5 border-top pt-4">
+            <p class="text-light">
+                © <span class="text-warning">Car deal</span>. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+       const cards = document.querySelectorAll('.service-card');
+  const cardsPerPage = 3;
+  let currentPage = 0;
+
+  function showCards(page) {
+    cards.forEach((card, index) => {
+      card.style.display = (index >= page * cardsPerPage && index < (page + 1) * cardsPerPage)
+        ? 'block'
+        : 'none';
+    });
+
+    // تعطيل الزر إذا كنا في أول أو آخر صفحة
+    document.getElementById('prevBtn').disabled = page === 0;
+    document.getElementById('nextBtn').disabled = page >= Math.ceil(cards.length / cardsPerPage) - 1;
+  }
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    const maxPage = Math.ceil(cards.length / cardsPerPage) - 1;
+    if (currentPage < maxPage) {
+      currentPage++;
+      showCards(currentPage);
+    }
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    if (currentPage > 0) {
+      currentPage--;
+      showCards(currentPage);
+    }
+  });
+
+  // عرض الصفحة الأولى عند التحميل
+  showCards(currentPage);
+</script>
+    </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
